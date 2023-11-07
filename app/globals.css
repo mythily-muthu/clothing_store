@@ -1,27 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* styles  */
+
+.flexStart {
+  @apply flex items-center justify-start;
+}
+.flexCenter {
+  @apply flex items-center justify-center;
+}
+.maxContainer {
+  @apply mx-auto max-w-[1440px];
+}
+.paddingX {
+  @apply px-5 md:px-14;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.paddingY {
+  @apply py-6 md:py-5;
+}
+/* buttons */
+.btn {
+  @apply flex items-center  text-sm cursor-pointer px-6 py-2 rounded-none justify-center;
+}
+.para1 {
+  @apply flex flex-wrap w-full items-center justify-center max-w-3xl text-lg md:text-[16px] leading-loose tracking-wide text-grey-light;
+}
+/* fonts */
+.regular-28 {
+  @apply text-[28px] font-[400];
+}
+.regular-20 {
+  @apply text-[20px] font-[400];
+}
+.regular-40 {
+  @apply text-[40px] font-[400];
+}
+.regular-18 {
+  @apply text-[18px] font-[400];
+}
+.regular-17 {
+  @apply text-[17px] font-[400];
+}
+.regular-14 {
+  @apply text-[14px] font-[400];
+}
+.regular-15 {
+  @apply text-[15px] font-[400];
+}
+.regular-12 {
+  @apply text-[12px] font-[400];
+}
+.regular-11 {
+  @apply text-[11px] font-[400];
+}
+.regular-10 {
+  @apply text-[10px] font-[400];
 }
