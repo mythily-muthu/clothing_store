@@ -11,6 +11,19 @@ const config: Config = {
       grey: {
         light: "#858688",
       },
+      black: {
+        100: "#1A1B18",
+        dark: "#000000",
+      },
+      white: {
+        100: "#FFFFFF",
+      },
+    },
+    screens: {
+      sm: "320px",
+      md: "750px",
+      lg: "1024px",
+      xl: "1280px",
     },
   },
   plugins: [],
