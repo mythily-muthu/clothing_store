@@ -74,12 +74,13 @@
 }
 /* custom.css */
 
-/* @layer utilities {
-  .newarrival {
-    @apply flex gap-3 h-auto w-auto sm:w-[142px] sm:h-[210px] md:w-[315px] md:h-[470px] md:gap-x-8 lg:w-[429px] lg:h-[640px] xl:w-[248px] xl:h-[371px] xl:grid-cols-4 xl:gap-x-8;
-  }
-} */
-
 .newarrival {
   @apply flex flex-wrap gap-3 justify-center items-center;
+}
+.brightness-filter {
+  filter: brightness(0.8);
+  transition: filter 1s ease;
+}
+.brightness-filter:hover {
+  filter: brightness(1);
 }

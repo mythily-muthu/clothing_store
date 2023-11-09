@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       grey: {
         light: "#858688",
+        nav: "#696969",
       },
       black: {
         100: "#1A1B18",

@@ -24,9 +24,9 @@ const TheBottomWearLounge = () => {
                     alt="leggins"
                     width={550}
                     height={340}
-                    className="object-cover "
+                    className="object-cover z-1 brightness-filter brightness-filter:hover "
                   />
-                  <p className="absolute text-white-100 left-8 bottom-8 tracking-wider text-[17px] ">
+                  <p className="absolute z-20 text-white-100 left-8 bottom-8 tracking-wider text-[17px] ">
                     {item.title}
                   </p>
                 </div>
