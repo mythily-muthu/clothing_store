@@ -44,7 +44,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="maxContainer border-b"></div>
+      {/* <div className="maxContainer border-b"></div> */}
     </>
   );
 };

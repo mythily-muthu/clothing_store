@@ -1,8 +1,14 @@
+"use client";
 import { footer1, footer2, footer3 } from "@/app/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Footer = () => {
+  const [isSmallPageOpen, setIsSmallPageOpen] = useState(false);
+
+  const handleIconClick = () => {
+    setIsSmallPageOpen(!isSmallPageOpen);
+  };
   return (
     <>
       <div className="maxContainer bg-black-dark h-full text-white-100 flexCenter ">
@@ -50,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className=" bg-black-dark w-full px-5 ">
+      <div className="bg-black-dark w-full px-5" onClick={handleIconClick}>
         <Image
           src="/message.png"
           alt="launcher"
@@ -59,6 +65,13 @@ const Footer = () => {
           className="hover:cursor-pointer"
         />
       </div>
+
+      {isSmallPageOpen && (
+        <div className="small-page" style={{ width: "200px", height: "150px" }}>
+          {/* Content of the small page goes here */}
+          <p>This is the small page content.</p>
+        </div>
+      )}
     </>
   );
 };
