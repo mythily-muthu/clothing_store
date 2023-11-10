@@ -74,3 +74,15 @@ export const Bottomware = [
     title: "Kurti Pants",
   },
 ];
+
+export const footer1 = [
+  "Payments",
+  "Shipping & exchange",
+  "Bulk queries",
+  "Terms & conditions",
+  "Privacy policy",
+  "Fabric/print disclaimer",
+];
+export const footer2 = ["About", "Our company", "Contact us", "Store locator"];
+
+export const footer3 = ["Track order", "Exchange request"];

@@ -22,7 +22,7 @@
 import React from "react";
 
 const Slider = () => {
-  return <div>Slider</div>;
+  return <div className="maxContainer flexCenter paddingY">Slider</div>;
 };
 
 export default Slider;
