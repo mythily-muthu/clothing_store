@@ -6,7 +6,7 @@ import Button from "./Button";
 const NewArrivals = () => {
   return (
     <>
-      <div className="paddingX paddingY maxContainer flex-col flex gap-5 flexCenter">
+      <div className="paddingX paddingY maxContainer flex-col flex gap-2 flexCenter">
         <h2 className="heading">For the Bold, Stylish & Confident you</h2>
         <p className="para1">
           Our collection features a range of stylish and versatile outfits
@@ -16,7 +16,7 @@ const NewArrivals = () => {
           ensuring that you look and feel your best all day long.
         </p>
       </div>
-      <div className="paddingX paddingY maxContainer flex-col flexCenter gap-5">
+      <div className="paddingX paddingY maxContainer flex-col flexCenter gap-2 mt-7">
         <h2 className="heading ">New Arrivals</h2>
         <div className="newarrival">
           {Anarkalis.map((item) => {
@@ -37,7 +37,9 @@ const NewArrivals = () => {
                 </p>
                 <h2 className="regular-15">{item.title}</h2>
                 <p className="flexStart gap-1">
-                  <span className="regular-12 text-xs tracking-wider">Rs</span>{" "}
+                  <span className="regular-12 text-xs lg:tracking-[0.2rem]">
+                    Rs
+                  </span>{" "}
                   {item.rate}
                   <span className="regular-12 text-xs tracking-wider">.00</span>
                 </p>
@@ -46,6 +48,9 @@ const NewArrivals = () => {
             );
           })}
         </div>
+      </div>
+      <div className="flexCenter mt-5">
+        <Button title="VIEW ALL" customStyles="p-1" />
       </div>
     </>
   );

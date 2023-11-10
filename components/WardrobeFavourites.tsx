@@ -2,6 +2,7 @@ import { Wardrobe } from "@/app/constants";
 import Image from "next/image";
 import React from "react";
 import SizeComponent from "./Size";
+import Button from "./Button";
 
 const WardrobeFavourites = () => {
   return (
@@ -34,6 +35,9 @@ const WardrobeFavourites = () => {
             </div>
           );
         })}
+      </div>
+      <div className="flexCenter mt-5">
+        <Button title="VIEW ALL" customStyles="p-1" />
       </div>
     </div>
   );

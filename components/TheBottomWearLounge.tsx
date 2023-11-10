@@ -10,9 +10,9 @@ const TheBottomWearLounge = () => {
         alt="image"
         width={1600}
         height={900}
-        className="mb-10"
+        className="mt-20"
       />
-      <div className="flexCenter maxContainer gap-5 paddingX paddingY flex-col ">
+      <div className="flexCenter maxContainer gap-5 paddingX paddingY flex-col  mt-14">
         <p className="heading">The Bottomwear Lounge</p>
         <div className="flex paddingY ">
           <div className="grid grid-cols-3 items-center justify-center gap-8">

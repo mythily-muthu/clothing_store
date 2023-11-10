@@ -33,7 +33,7 @@
 }
 /* buttons */
 .btn {
-  @apply flex items-center text-[10px] tracking-[0.2rem] cursor-pointer px-6 py-4 rounded-none justify-center m-5 bg-black-100 text-white-100;
+  @apply flex items-center text-[10px] tracking-[0.2rem] cursor-pointer px-20  py-4 rounded-none justify-center mt-5 bg-black-100 text-white-100;
 }
 .para1 {
   @apply flex flex-wrap w-full items-center justify-center max-w-3xl text-sm leading-7 tracking-wider md:text-[16px] md:tracking-widest text-grey-light text-center;
