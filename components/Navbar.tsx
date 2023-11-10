@@ -35,12 +35,12 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex hover:cursor-pointer">
-          <div className="flex w-10 h-10 object-contain">
+        <div className="flex hover:cursor-pointer items-center">
+          <div className="flex w-10 h-10 object-contain ">
             <Image src="search.svg" alt="search" width={30} height={20} />
           </div>
-          <div className="flex w-10 h-10 object-contain">
-            <Image src="/cart.png" alt="search" width={30} height={10} />
+          <div className="flex w-25 h-6 object-contain">
+            <Image src="/cart.png" alt="search" width={25} height={6} />
           </div>
         </div>
       </div>

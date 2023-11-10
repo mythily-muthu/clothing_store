@@ -21,8 +21,8 @@ const NewArrivals = () => {
         <div className="newarrival">
           {Anarkalis.map((item) => {
             return (
-              <div className="flex flex-col gap-y-3">
-                <div className="flexCenter w-full lg:w-[325px] lg:h-[528px] ">
+              <div className="flex flex-col gap-y-3 relative">
+                <div className="flexCenter w-full lg:w-[325px] lg:h-[528px]  ">
                   <Image
                     src={item.image}
                     alt="image"
@@ -30,6 +30,11 @@ const NewArrivals = () => {
                     height={528}
                     className="object-cover "
                   />
+                </div>
+                <div className="bg-black-100 rounded-full px-3 py-[6px] absolute left-3 top-8 ">
+                  <p className="flexStart text-white-100 font-light text-[11px] tracking-[0.1rem] ">
+                    New arrivals
+                  </p>
                 </div>
 
                 <p className="flexStart text-grey-light font-light text-[9px] tracking-[0.1rem] ">

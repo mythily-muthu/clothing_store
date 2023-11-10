@@ -11,7 +11,7 @@ const WardrobeFavourites = () => {
       <div className="newarrival ">
         {Wardrobe.map((dress) => {
           return (
-            <div className="flex flex-col gap-y-3">
+            <div className="flex flex-col gap-y-3 relative">
               <div className="flexCenter w-full lg:w-[325px] lg:h-[528px] ">
                 <Image
                   src={dress.image}
@@ -21,7 +21,16 @@ const WardrobeFavourites = () => {
                   className="object-cover "
                 />
               </div>
-
+              <div className="bg-black-100 rounded-full px-3 py-[6px] absolute left-3 top-8 ">
+                <p className="flexStart text-white-100 font-light text-[11px] tracking-[0.1rem] ">
+                  New arrivals
+                </p>
+              </div>
+              <div className="bg-black-100 rounded-full px-3 py-[6px] absolute left-[120px] top-8 ">
+                <p className="flexStart text-white-100 font-light text-[11px] tracking-[0.1rem] ">
+                  Restocked
+                </p>
+              </div>
               <p className="flexStart text-grey-light font-light text-[9px] tracking-[0.1rem] ">
                 HAY!
               </p>

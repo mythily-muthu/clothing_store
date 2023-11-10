@@ -13,7 +13,7 @@ const slides = [
 
 const Slider = () => {
   return (
-    <div className="paddingY maxContainer h-[920px] relative flex mx-auto">
+    <div className="paddingY maxContainer h-[920px] flex mx-auto">
       {slides.map((slide) => (
         <Image
           src={slide}
@@ -23,24 +23,24 @@ const Slider = () => {
           className="object-fill"
         />
       ))}
-      <div className="absolute ">
+      {/* <div className="absolute ">
         <Image
-          src="/leftarrow.svg"
+          src="/leftarrow.png"
           alt="left"
           width={40}
           height={40}
-          className="object-fill left-0 top-[50px]"
+          className="object-fill "
         />
       </div>
       <div className="absolute ">
         <Image
-          src="/righttarrow.svg"
+          src="/righttarrow.png"
           alt="right"
-          width={50}
-          height={50}
-          className="object-fill"
+          width={40}
+          height={40}
+          className="object-fill right-0 top-[50px]"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
