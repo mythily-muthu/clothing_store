@@ -1,6 +1,6 @@
 import React from "react";
 
-type ButtonProps = { title: "button";  };
+type ButtonProps = { title: "VIEW ALL"; customStyles?: string };
 
 const Button = ({ title, customStyles }: ButtonProps) => {
   return (
