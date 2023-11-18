@@ -7,7 +7,7 @@ import Button from "./Button";
 const WardrobeFavourites = () => {
   return (
     <div className="paddingX paddingY maxContainer flex-col flexCenter gap-5 mb-10">
-      <h2 className="heading ">Wardrobe Favourites</h2>
+      <h2 className="heading ">Wardrobe Favourites.</h2>
       <div className="newarrival ">
         {Wardrobe.map((dress) => {
           return (
